@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+
+
+/* ----------------------------- */
+/* ----------- Reset ----------- */
+/* ----------------------------- */
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* ------------------------------ */
+/* ------ Custom Variables ------ */
+/* ------------------------------ */
+
+:root {
+  /* ### Primary */
+
+  --Dark-cyan: 158 36% 37%;
+  --Cream: 30 38% 92%;
+
+  /* ### Neutral */
+
+  --Very-dark-blue: 212 21% 14%;
+  --Dark-grayish-blue: 228 12% 48%;
+  --White: 0 0% 100%;
+
+  /* ---Topography --- */
+
+  --ff-mont: "Montserrat", sans-serif;
+  --ff-fraunces: "Fraunces", serif;
+}
+
+
+/* ------------------------- */
+/* ------ Utilities -------- */
+/* ------------------------- */
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.light-text {
+  color: hsl(var(--Very-dark-blue) / .5);
+}
+
+.light-para {
+  color: hsl(var(--Very-dark-blue) / .9);
+}
+
+
+/* --------------------------- */
+/* --------- Main CSS -------- */
+/* --------------------------- */
+
+
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: var(--ff-mont);
+}
+
+header {
+  background-color: hsl(var(--Cream));
+  padding-block: 200px;
+}
+
+.card {
+  width: 50%;
+  min-width: 580px;
+  margin-inline: auto;
+  border-radius: 1rem;
+  align-items: center;
+  overflow: hidden;
+  background-color: hsl(var(--White));
+}
+
+
+.card>div {
+  width: 100%;
+}
+
+.card-img img{
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card-text {
+  padding: 2em;
+}
+
+
+
+.card-title {
+  /* font-size: 3rem; */
+  font-family: var(--ff-fraunces);
+  line-height: 1;
+  margin-block: 1rem;
+  max-width: 320px;
+}
+
+.card-subtitle {
+  letter-spacing: .3em;
+  color: hsl(var(--Dark-grayish-blue));
+}
+
+.card-discription {
+  color: hsl(var(--Dark-grayish-blue));
+  max-width: 320px;
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-block: 2rem;
+}
+
+.price-tag > :first-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--ff-fraunces);
+  color: hsl(var(--Dark-cyan));
+}
+
+.cart-btn {
+  font-weight: 500;
+  font-family: var(--ff-mont);
+  color: hsl(var(--White));
+  background-color: hsl(var(--Dark-cyan));
+  padding: 1em;
+  border: none;
+  border-radius: .5em;
+}
+
+@media (max-width:900px){
+  .card {
+    flex-direction: column;
+  }
+}
