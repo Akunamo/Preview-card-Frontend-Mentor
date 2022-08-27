@@ -135,6 +135,7 @@ header {
   align-items: center;
   gap: 4rem;
   margin-block: 2rem;
+  color: hsl(var(--Dark-grayish-blue));
 }
 
 .price-tag > :first-child {
