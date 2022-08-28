@@ -97,7 +97,7 @@ header {
 }
 
 
-.card>div {
+.card>* {
   width: 100%;
 }
 
@@ -114,6 +114,7 @@ header {
 
 
 .card-title {
+  font-size: 2.2rem;
   font-family: var(--ff-fraunces);
   line-height: 1;
   margin-block: 1rem;
@@ -122,7 +123,7 @@ header {
 
 .card-subtitle {
   letter-spacing: .3em;
-  color: hsl(var(--Dark-grayish-blue));
+  color: hsl(var(--Dark-grayish-blue) / .8);
 }
 
 .card-discription {
@@ -139,7 +140,7 @@ header {
 }
 
 .price-tag > :first-child {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   font-family: var(--ff-fraunces);
   color: hsl(var(--Dark-cyan));
@@ -155,12 +156,11 @@ header {
   border-radius: .5em;
 }
 
-@media (min-width:600px){
+@media (min-width:650px){
   .card {
     flex-direction: row;
-    width: min(95%,585px);
+    width: min(95%,630px);
     /* width: 95%;
     min-width: 585px; */
   }
-  .card-text {
-  }
+}
