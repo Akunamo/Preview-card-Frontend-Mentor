@@ -88,7 +88,7 @@ header {
 
 .card {
   flex-direction: column;
-  width: min(90%, 351px);
+  width: min(90%, 400px);
   margin-inline: auto;
   border-radius: 1rem;
   align-items: center;
@@ -156,10 +156,10 @@ header {
   border-radius: .5em;
 }
 
-@media (min-width:650px){
+@media (min-width:670px){
   .card {
     flex-direction: row;
-    width: min(95%,630px);
+    width: min(95%,640px);
     /* width: 95%;
     min-width: 585px; */
   }
